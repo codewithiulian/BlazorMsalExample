@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 # Ignore all appsettings.json
 Client/wwwroot/appsettings.json
+/Server/appsettings.json

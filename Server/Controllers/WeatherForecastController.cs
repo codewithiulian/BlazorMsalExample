@@ -1,11 +1,15 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Web.Resource;
 using TestApp.Shared;
 
 namespace TestApp.Server.Controllers
 {
-	[ApiController]
+    [Authorize]
+    [ApiController]
 	[Route("[controller]")]
-	public class WeatherForecastController : ControllerBase
+    [RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
+    public class WeatherForecastController : ControllerBase
 	{
 		private static readonly string[] Summaries = new[]
 		{
