@@ -365,3 +365,5 @@ FodyWeavers.xsd
 # Ignore all appsettings.json
 Client/wwwroot/appsettings.json
 /Server/appsettings.json
+/Client/wwwroot/.well-known/microsoft-identity-association.json
+/Server/Properties/ServiceDependencies/BlazorMsalExample - Zip Deploy/profile.arm.json
